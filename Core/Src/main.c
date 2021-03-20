@@ -136,6 +136,7 @@ int main(void)
   
   HAL_TIM_Base_Start_IT(&htim2); //开启定时器2的中断
 	HAL_UART_Receive_IT(&huart1, (uint8_t *)&aRxBuffer, 1);
+	HAL_Delay(10);
 	
   /* USER CODE END 2 */
 
